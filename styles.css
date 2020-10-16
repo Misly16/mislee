@@ -32,15 +32,25 @@ body, html {
     margin: auto;
     margin-top: 20px;
     box-shadow:
-  0 3.2px 3.5px -7px rgba(0, 0, 0, 0.028),
-  0 7.6px 8.5px -7px rgba(0, 0, 0, 0.04),
-  0 14.4px 16px -7px rgba(0, 0, 0, 0.05),
-  0 25.7px 28.6px -7px rgba(0, 0, 0, 0.06),
-  0 48px 53.5px -7px rgba(0, 0, 0, 0.072),
-  0 115px 128px -7px rgba(0, 0, 0, 0.1);
+      0 0px 1.6px rgba(0, 0, 0, 0.06),
+      0 0px 3.6px rgba(0, 0, 0, 0.087),
+      0 0px 6.3px rgba(0, 0, 0, 0.107),
+      0 0px 10px rgba(0, 0, 0, 0.125),
+      0 0px 15.5px rgba(0, 0, 0, 0.143),
+      0 0px 24.1px rgba(0, 0, 0, 0.163),
+      0 0px 40px rgba(0, 0, 0, 0.19),
+      0 0px 80px rgba(0, 0, 0, 0.25)
+    ;
+  transition: 300ms;
   width: 30%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
+
+.box:hover {
+  box-shadow: none;
+  transition: 300ms;
+}
+
 .box-item {
     margin: auto;
 }
@@ -63,14 +73,21 @@ body {
   padding: 14px 40px;
   text-decoration: none;
   font-size: 17px;
+  transition: 300ms;
 }
 
 #home {
-    margin-right: 30%;
+  margin-right: 30%;
+  transition: 300ms;
+}
+
+#home:hover {
+  background-color: #1f274d;
+  transition: 300ms;
 }
 
 .topnav a:hover {
-    transition: 1ms all;
+    transition: 150ms all;
   background-color: rgba(0 87 102 / 52%);
   color: rgb(0, 217, 255);
 }
@@ -104,4 +121,9 @@ body {
     display: block;
     text-align: left;
   }
+}
+
+::selection {
+  background: #5e32a8;
+  /* border-radius: 5px; */
 }
